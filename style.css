@@ -1,0 +1,32 @@
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Style pour le titre principal */
+h1 {
+    color: #ff5722;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Style pour les sous-titres */
+h2 {
+    color: #4caf50;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Ajout d'une bordure aux sous-titres */
+h2:nth-child(2) {
+    border-top: 2px solid #4caf50;
+    border-bottom: 2px solid #4caf50;
+    padding: 10px 0;
+}
