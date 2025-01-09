@@ -3,8 +3,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #4e54c8, #8f94fb); /* Dégradé plus sobre */
-    color: #fff;
+    background: linear-gradient(to bottom, #2e2e2e, #4a4a4a); /* Dégradé de gris foncé */
+    color: #f2f2f2;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,8 +12,8 @@ body {
 
 /* Style pour le menu de navigation */
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #1a1a1a; /* Gris très foncé */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -34,13 +34,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #f2f2f2;
     font-size: 1.2em;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
-    color: #ffcc70; /* Couleur douce pour le hover */
+    color: #e0e0e0; /* Gris clair pour le hover */
     transform: scale(1.1);
 }
 
@@ -48,9 +48,9 @@ nav ul li a:hover {
 header {
     text-align: center;
     padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.1); /* Transparence douce */
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.05); /* Transparence douce */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     margin: 20px auto;
     max-width: 900px;
@@ -62,7 +62,7 @@ header h1 {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #ffeaa7; /* Couleur douce pour le texte */
+    color: #d1d1d1; /* Gris clair */
     animation: pulse 2s infinite; /* Animation pulsante */
 }
 
@@ -74,31 +74,31 @@ section {
 
 section h2, section h3 {
     font-weight: 300;
-    color: #ffcc70;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #e0e0e0; /* Gris doux */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     animation: slideIn 1s ease; /* Apparition avec glissement */
 }
 
 /* Style des listes de définitions */
 main dl {
-    background: rgba(255, 255, 255, 0.1); /* Transparence douce */
+    background: rgba(255, 255, 255, 0.05); /* Transparence douce */
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
     max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease; /* Apparition en fondu */
 }
 
 main dt {
     font-weight: bold;
-    color: #81ecec;
+    color: #b5b5b5; /* Gris moyen */
     margin-bottom: 10px;
     animation: highlight 3s infinite; /* Effet d'éclaircissement */
 }
 
 main dd {
-    color: #dfe6e9;
+    color: #dcdcdc; /* Gris clair */
     margin-left: 20px;
     font-style: italic;
 }
@@ -137,18 +137,18 @@ main dd {
 
 @keyframes pulse {
     0%, 100% {
-        text-shadow: 0 0 10px #ffeaa7, 0 0 20px #ffcc70, 0 0 30px #ffcc70;
+        text-shadow: 0 0 5px #d1d1d1, 0 0 10px #d1d1d1, 0 0 15px #d1d1d1;
     }
     50% {
-        text-shadow: 0 0 20px #ffeaa7, 0 0 40px #ffcc70, 0 0 60px #ffcc70;
+        text-shadow: 0 0 10px #d1d1d1, 0 0 20px #d1d1d1, 0 0 30px #d1d1d1;
     }
 }
 
 @keyframes highlight {
     0%, 100% {
-        color: #81ecec;
+        color: #b5b5b5;
     }
     50% {
-        color: #74b9ff;
+        color: #e0e0e0;
     }
 }
