@@ -1,32 +1,66 @@
-/* Style pour le corps de la page */
+/* Style général pour le corps */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     color: #333;
 }
 
-/* Style pour le titre principal */
-h1 {
+/* Style pour le menu de navigation */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
     color: #ff5722;
-    font-size: 2.5em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
 }
 
-/* Style pour les sous-titres */
-h2 {
+/* Style pour le titre */
+h1 {
+    text-align: center;
     color: #4caf50;
-    font-size: 1.8em;
-    text-align: center;
-    margin: 10px 0;
+    margin-top: 20px;
 }
 
-/* Ajout d'une bordure aux sous-titres */
-h2:nth-child(2) {
-    border-top: 2px solid #4caf50;
-    border-bottom: 2px solid #4caf50;
-    padding: 10px 0;
+/* Style pour la liste de définitions */
+dl {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff;
+}
+
+dd {
+    margin-left: 20px;
+    color: #555;
 }
